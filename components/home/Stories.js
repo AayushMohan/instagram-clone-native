@@ -3,7 +3,7 @@ import React from "react";
 
 export const USERS = [
   {
-    name: "aayushmohan",
+    name: "thisisaayushmohan",
     image: "https://avatars.githubusercontent.com/u/66319691?v=4",
   },
   {
