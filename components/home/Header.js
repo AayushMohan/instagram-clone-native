@@ -11,9 +11,14 @@ const Header = () => {
         />
       </TouchableOpacity>
       <View style={styles.iconsContainer}>
-        <Text style={{ color: "white" }}>Dummy </Text>
-        <Text style={{ color: "white" }}>Dummy </Text>
-        <Text style={{ color: "white" }}>Dummy </Text>
+        <TouchableOpacity>
+          <Image
+            source={{
+              uri: "https://img.icons8.com/fluency-systems-regular/600/ffffff/plus-2-math.png",
+            }}
+            style={styles.icon}
+          />
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -37,5 +42,11 @@ const styles = StyleSheet.create({
     width: 100,
     height: 50,
     resizeMode: "contain",
+  },
+  icon: {
+    width: 30,
+    height: 30,
+    resizeMode: "contain",
+    marginLeft: 10,
   },
 });
