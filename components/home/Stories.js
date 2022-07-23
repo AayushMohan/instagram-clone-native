@@ -13,6 +13,7 @@ export const USERS = [
   },
   {
     name: "aayushcodes",
+    image: "https://aayushmohan.dev/_next/static/media/Coding.6d7c2d6e.svg",
   },
 ];
 
