@@ -19,6 +19,14 @@ const Header = () => {
             style={styles.icon}
           />
         </TouchableOpacity>
+        <TouchableOpacity>
+          <Image
+            source={{
+              uri: "https://img.icons8.com/fluency-systems-regular/600/ffffff/facebook-messenger.png",
+            }}
+            style={styles.icon}
+          />
+        </TouchableOpacity>
       </View>
     </View>
   );
