@@ -9,6 +9,10 @@ const postFooterIcons = [
       "https://img.icons8.com/fluency-systems-regular/60/ffffff/like.png",
     likedImageUrl: "https://img.icons8.com/ios-glyphs/90/fa314a/like.png",
   },
+  {
+    name: "comment",
+    imageUrl: "https://img.icons8.com/material-outlined/60/ffffff/speech.png",
+  },
 ];
 
 const Post = ({ post }) => {
