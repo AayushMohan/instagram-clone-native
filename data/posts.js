@@ -3,7 +3,7 @@ import { USERS } from "./users";
 export const POSTS = [
   {
     imageUrl:
-      "https://instagram.fdel3-2.fna.fbcdn.net/v/t51.2885-19/271278320_2230211373796201_3550252510377996040_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fdel3-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=AxrXZMy-Zm4AX_mG-iR&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AT8v0vBidCtNP8FWxOoD9k90zi1A-79ChAioDeZbx2Y1rA&oe=62E52483&_nc_sid=8fd12b",
+      "https://instagram.fdel3-3.fna.fbcdn.net/v/t51.2885-15/271266258_3051978025090893_1475305425478943407_n.jpg?stp=dst-jpg_e35&cb=2d435ae8-0fbdf7c6&_nc_ht=instagram.fdel3-3.fna.fbcdn.net&_nc_cat=109&_nc_ohc=JDc0XyIoHSIAX9T8oLh&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjc0MzgxNzYzODYzMDE0NzQ5NA%3D%3D.2-ccb7-5&oh=00_AT--CwPynzGndjYeUOoG_LkPf8UETbpeS2-Jt6DAOEbqEQ&oe=62E5DA63&_nc_sid=30a2ef",
     user: USERS[0].user,
     likes: 7870,
     caption: "Train Ride to Hogwarts. 😂🚆",
