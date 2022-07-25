@@ -26,6 +26,9 @@ const PostHeader = ({ post }) => (
         {post.user}
       </Text>
     </View>
+    <Text style={{ color: "white", marginLeft: 5, fontWeight: "900" }}>
+      ...
+    </Text>
   </View>
 );
 
