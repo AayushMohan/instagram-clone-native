@@ -36,6 +36,7 @@ const Post = ({ post }) => {
         <Likes post={post} />
         <Caption post={post} />
         <CommentSection post={post} />
+        <Comment post={post} />
       </View>
     </View>
   );
@@ -119,6 +120,21 @@ const CommentSection = ({ post }) => (
       </Text>
     )}
   </View>
+);
+
+const Comment = ({ post }) => (
+  <>
+    {post.comments.map((comment, index) => (
+      <View key={index} style={{ marginTop: 5, flexDirection: "row" }}>
+        <Text style={{ color: "white" }}>
+          <Text style={{ fontWeight: "600" }}>{comment.user}</Text>{" "}
+          {comment.comment}
+        </Text>
+      </View>
+    ))}
+    {/*  */}
+    {/*  */}
+  </>
 );
 
 export default Post;
