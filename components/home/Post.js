@@ -34,6 +34,7 @@ const Post = ({ post }) => {
       <View style={{ marginHorizontal: 15, marginTop: 10 }}>
         <PostFooter />
         <Likes post={post} />
+        <Caption post={post} />
       </View>
     </View>
   );
@@ -96,6 +97,13 @@ const Likes = ({ post }) => (
     <Text style={{ color: "white", fontWeight: "600" }}>
       {post.likes.toLocaleString("en")} likes
     </Text>
+  </View>
+);
+
+const Caption = ({ post }) => (
+  <View style={{ marginTop: 5, flexDirection: "row" }}>
+    <Text style={{ color: "white", fontWeight: "600" }}>{post.user}</Text>
+    <Text style={{ color: "white" }}> {post.caption}</Text>
   </View>
 );
 
