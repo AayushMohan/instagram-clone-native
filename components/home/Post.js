@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import React from "react";
 import Divider from "rn-dividers";
 
@@ -30,6 +30,9 @@ const Post = ({ post }) => {
       <Divider width={1} orientation="vertical" />
       <PostHeader post={post} />
       <PostImage post={post} />
+      <View style={{ marginHorizontal: 15, marginTop: 10 }}>
+        <PostFooter />
+      </View>
     </View>
   );
 };
@@ -55,14 +58,24 @@ const PostHeader = ({ post }) => (
   </View>
 );
 
-const PostImage = ({ post }) => {
+const PostImage = ({ post }) => (
   <View style={{ width: "100%", height: 450 }}>
     <Image
       source={{ uri: post.imageUrl }}
       style={{ height: "100%", resizeMode: "cover" }}
     />
-  </View>;
-};
+  </View>
+);
+
+const PostFooter = () => (
+  <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[0].imageUrl} />
+);
+
+const Icon = ({ imgStyle, imgUrl }) => (
+  <TouchableOpacity>
+    <Image style={imgStyle} source={{ uri: imgUrl }} />
+  </TouchableOpacity>
+);
 
 export default Post;
 
@@ -75,5 +88,9 @@ const styles = StyleSheet.create({
     marginRight: 6,
     borderWidth: 1.6,
     borderColor: "#F56040",
+  },
+  footerIcon: {
+    width: 33,
+    height: 33,
   },
 });
