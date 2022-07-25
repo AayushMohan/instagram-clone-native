@@ -4,14 +4,19 @@ import Divider from "rn-dividers";
 
 const postFooterIcons = [
   {
-    name: "like",
+    name: "Like",
     imageUrl:
       "https://img.icons8.com/fluency-systems-regular/60/ffffff/like.png",
     likedImageUrl: "https://img.icons8.com/ios-glyphs/90/fa314a/like.png",
   },
   {
-    name: "comment",
+    name: "Comment",
     imageUrl: "https://img.icons8.com/material-outlined/60/ffffff/speech.png",
+  },
+  {
+    name: "Share",
+    imageUrl:
+      "https://img.icons8.com/fluency-systems-regular/60/ffffff/share.png",
   },
 ];
 
