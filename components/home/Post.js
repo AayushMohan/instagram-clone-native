@@ -15,8 +15,12 @@ const postFooterIcons = [
   },
   {
     name: "Share",
+    imageUrl: "https://img.icons8.com/ios/60/ffffff/sent.png/",
+  },
+  {
+    name: "Save",
     imageUrl:
-      "https://img.icons8.com/fluency-systems-regular/60/ffffff/share.png",
+      "https://img.icons8.com/fluency-systems-regular/60/ffffff/bookmark-ribbon--v1.png",
   },
 ];
 
