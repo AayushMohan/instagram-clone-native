@@ -12,9 +12,16 @@ const Post = ({ post }) => {
 };
 
 const PostHeader = ({ post }) => (
-  <View>
+  <View
+    style={{
+      flexDirection: "row",
+      justifyContent: "space-between",
+      margin: 5,
+      alignItems: "center",
+    }}
+  >
     <View>
-      <Image />
+      <Image source={{ uri: post.profile_picture }} style={styles.story} />
       <Text></Text>
     </View>
   </View>
@@ -22,4 +29,14 @@ const PostHeader = ({ post }) => (
 
 export default Post;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  story: {
+    width: 35,
+    height: 35,
+    borderRadius: 50,
+    marginLeft: 6,
+    marginRight: 6,
+    borderWidth: 1.6,
+    borderColor: "#F56040",
+  },
+});
