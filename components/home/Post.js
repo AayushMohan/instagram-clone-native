@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const Post = () => {
+const Post = (post) => {
   return (
-    <View>
-      <Text>Post</Text>
+    <View style={{ marginBottom: 30 }}>
+      <Text style={{ color: "white" }}>Post</Text>
     </View>
   );
 };
