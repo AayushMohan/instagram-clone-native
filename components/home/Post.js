@@ -112,7 +112,7 @@ const Caption = ({ post }) => (
 
 const CommentSection = ({ post }) => (
   <View style={{ marginTop: 5 }}>
-    {post.comments.length && (
+    {!!post.comments.length && (
       <Text style={{ color: "gray", fontWeight: "600" }}>
         View{post.comments.length > 1 ? " all" : ""} {post.comments.length}{" "}
         {post.comments.length > 1 ? "comments" : "comment"}
