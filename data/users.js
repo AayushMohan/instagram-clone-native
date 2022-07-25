@@ -14,4 +14,14 @@ export const USERS = [
     image:
       "https://instagram.fdel3-2.fna.fbcdn.net/v/t51.2885-19/289057432_1577160816011497_2805460423562490296_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fdel3-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=sIQaSe7HrUQAX-VsUDp&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AT8jcLUWbg4bc1W4go41aJbToPqBmY4byz5TE_Y-n0XdzQ&oe=62E4D1C1&_nc_sid=8fd12b",
   },
+  {
+    name: "zuck",
+    image:
+      "https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/177219615_1728341124004802_3178671336629535217_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fdel3-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=-HLbv_5zQroAX9hhyED&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AT_LMLkuBX-p8hbEfB8zbgx9Gjjl2pT4BDTqnwZQonDH5w&oe=62E56D87&_nc_sid=8fd12b",
+  },
+  {
+    name: "jeffbezos",
+    image:
+      "https://instagram.fdel3-1.fna.fbcdn.net/v/t51.2885-19/20065787_368487153565914_9007716647976304640_a.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fdel3-1.fna.fbcdn.net&_nc_cat=1&_nc_ohc=OxqqIDoXGC0AX_Ay8vK&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AT8HI_FhBVhA6n-evptdqkQ9lbLR6luwJZv2GzWDKd4_2w&oe=62E5429E&_nc_sid=8fd12b",
+  },
 ];
