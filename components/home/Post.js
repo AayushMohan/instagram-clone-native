@@ -15,7 +15,8 @@ const postFooterIcons = [
   },
   {
     name: "Share",
-    imageUrl: "https://img.icons8.com/ios/60/ffffff/sent.png/",
+    imageUrl:
+      "https://img.icons8.com/fluency-systems-regular/60/ffffff/sent.png/",
   },
   {
     name: "Save",
@@ -68,7 +69,16 @@ const PostImage = ({ post }) => (
 );
 
 const PostFooter = () => (
-  <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[0].imageUrl} />
+  <View style={{ flexDirection: "row", alignItems: "center" }}>
+    <View style={styles.leftFooterIconContainer}>
+      <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[0].imageUrl} />
+      <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[1].imageUrl} />
+      <Icon
+        imgStyle={[styles.footerIcon, styles.shareIcon]}
+        imgUrl={postFooterIcons[2].imageUrl}
+      />
+    </View>
+  </View>
 );
 
 const Icon = ({ imgStyle, imgUrl }) => (
@@ -89,8 +99,20 @@ const styles = StyleSheet.create({
     borderWidth: 1.6,
     borderColor: "#F56040",
   },
+
   footerIcon: {
     width: 33,
     height: 33,
+  },
+
+  shareIcon: {
+    transform: [{ rotate: "320deg" }],
+    marginTop: -3,
+  },
+
+  leftFooterIconContainer: {
+    flexDirection: "row",
+    width: "32%",
+    justifyContent: "space-between",
   },
 });
