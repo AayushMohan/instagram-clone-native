@@ -69,7 +69,7 @@ const PostImage = ({ post }) => (
 );
 
 const PostFooter = () => (
-  <View style={{ flexDirection: "row", alignItems: "center" }}>
+  <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
     <View style={styles.leftFooterIconContainer}>
       <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[0].imageUrl} />
       <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[1].imageUrl} />
@@ -77,6 +77,9 @@ const PostFooter = () => (
         imgStyle={[styles.footerIcon, styles.shareIcon]}
         imgUrl={postFooterIcons[2].imageUrl}
       />
+    </View>
+    <View>
+      <Icon imgStyle={styles.footerIcon} imgUrl={postFooterIcons[3].imageUrl} />
     </View>
   </View>
 );
