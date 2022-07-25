@@ -2,6 +2,15 @@ import { Image, StyleSheet, Text, View } from "react-native";
 import React from "react";
 import Divider from "rn-dividers";
 
+const postFooterIcons = [
+  {
+    name: "like",
+    imageUrl:
+      "https://img.icons8.com/fluency-systems-regular/60/ffffff/like.png",
+    likedImageUrl: "https://img.icons8.com/ios-glyphs/90/fa314a/like.png",
+  },
+];
+
 const Post = ({ post }) => {
   return (
     <View style={{ marginBottom: 30 }}>
