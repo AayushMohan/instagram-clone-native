@@ -21,7 +21,7 @@ export const POSTS = [
   },
   {
     imageUrl:
-      "https://www.canva.com/design/DAFHEsrN-dI/sFzmHSjrWYmEiwwCtkvE8A/view?utm_content=DAFHEsrN-dI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
     user: USERS[1].user,
     likes: 7870,
     caption: "Train Ride to Hogwarts. 😂🚆",
