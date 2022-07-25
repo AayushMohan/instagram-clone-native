@@ -24,7 +24,8 @@ export const POSTS = [
       "https://instagram.fdel3-2.fna.fbcdn.net/v/t51.2885-15/286875377_118827587505425_8968988057441669205_n.jpg?se=7&stp=dst-jpg_e35&cb=2d435ae8-0fbdf7c6&_nc_ht=instagram.fdel3-2.fna.fbcdn.net&_nc_cat=105&_nc_ohc=e2kiMcRMyi4AX8rg03a&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg1NjIxODg3OTI3ODIxNDAwNw%3D%3D.2-ccb7-5&oh=00_AT8vRizpLV9D0rqoND4A9X77FMDXUBqzlFKzY1A90orCjw&oe=62E5DA5A&_nc_sid=30a2ef",
     user: USERS[1].user,
     likes: 4370,
-    caption: "Train Ride to Hogwarts. 😂🚆",
+    caption:
+      "No matter where I am, I always have a stack of books close by. Here are five that stuck with me.",
     profile_picture: USERS[1].image,
     comments: [
       {
