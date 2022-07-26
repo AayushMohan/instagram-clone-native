@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import React, { useState } from "react";
 import Divider from "rn-dividers";
+import { TouchableOpacity } from "react-native-web";
 
 export const bottomTabIcons = [
   {
@@ -37,6 +38,13 @@ export const bottomTabIcons = [
 
 const BottomTabs = ({ icons }) => {
   const [activeTab, setActiveTab] = useState("Home");
+
+  const Icon = ({ icons }) => (
+    <TouchableOpacity>
+      <Image />
+    </TouchableOpacity>
+  );
+
   return (
     <View>
       <Text>BottomTabs</Text>
