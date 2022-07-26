@@ -35,7 +35,8 @@ export const bottomTabIcons = [
   },
 ];
 
-const BottomTabs = () => {
+const BottomTabs = ({ icons }) => {
+  const [activeTab, setActiveTab] = useState("Home");
   return (
     <View>
       <Text>BottomTabs</Text>
