@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 import React, { useState } from "react";
 import Divider from "rn-dividers";
 import { TouchableOpacity } from "react-native-web";
@@ -30,28 +30,50 @@ export const bottomTabIcons = [
   {
     name: "Profile",
     active:
-      "https://yt3.ggpht.com/ytc/AKedOLRY9Un_v7Xr9dG1F5NEkqGsGSqwqRz0O3w3r1mI=s900-c-k-c0x00ffffff-no-rj",
+      "https://instagram.fdel3-3.fna.fbcdn.net/v/t51.2885-15/271266258_3051978025090893_1475305425478943407_n.jpg?stp=dst-jpg_e35&cb=2d435ae8-0fbdf7c6&_nc_ht=instagram.fdel3-3.fna.fbcdn.net&_nc_cat=109&_nc_ohc=JDc0XyIoHSIAX9T8oLh&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjc0MzgxNzYzODYzMDE0NzQ5NA%3D%3D.2-ccb7-5&oh=00_AT--CwPynzGndjYeUOoG_LkPf8UETbpeS2-Jt6DAOEbqEQ&oe=62E5DA63&_nc_sid=30a2ef",
     inactive:
-      "https://yt3.ggpht.com/ytc/AKedOLRY9Un_v7Xr9dG1F5NEkqGsGSqwqRz0O3w3r1mI=s900-c-k-c0x00ffffff-no-rj",
+      "https://instagram.fdel3-3.fna.fbcdn.net/v/t51.2885-15/271266258_3051978025090893_1475305425478943407_n.jpg?stp=dst-jpg_e35&cb=2d435ae8-0fbdf7c6&_nc_ht=instagram.fdel3-3.fna.fbcdn.net&_nc_cat=109&_nc_ohc=JDc0XyIoHSIAX9T8oLh&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjc0MzgxNzYzODYzMDE0NzQ5NA%3D%3D.2-ccb7-5&oh=00_AT--CwPynzGndjYeUOoG_LkPf8UETbpeS2-Jt6DAOEbqEQ&oe=62E5DA63&_nc_sid=30a2ef",
   },
 ];
 
 const BottomTabs = ({ icons }) => {
   const [activeTab, setActiveTab] = useState("Home");
 
-  const Icon = ({ icons }) => (
-    <TouchableOpacity>
-      <Image />
+  const Icon = ({ icon }) => (
+    <TouchableOpacity onPress={() => setActiveTab(icon.name)}>
+      <Image
+        source={{ uri: activeTab === icon.name ? icon.active : icon.inactive }}
+        style={styles.icon}
+      />
     </TouchableOpacity>
   );
 
   return (
-    <View>
-      <Text>BottomTabs</Text>
+    <View style={styles.wrapper}>
+      <Divider width={1} />
+      <View style={styles.container}>
+        {icons.map((icon, index) => (
+          <Icon key={index} icon={icon} />
+        ))}
+      </View>
     </View>
   );
 };
 
 export default BottomTabs;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  wrapper: {},
+
+  container: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    height: 50,
+    paddingTop: 10,
+  },
+
+  icon: {
+    width: 30,
+    height: 30,
+  },
+});
